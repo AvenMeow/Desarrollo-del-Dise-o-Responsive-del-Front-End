@@ -64,7 +64,7 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
 
 /* Sección de Bienvenida */
 .foreword { /* Entrada */
-    background-image: url('../img/fondo.jpg');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;

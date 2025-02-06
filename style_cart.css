@@ -13,6 +13,7 @@ body { /* Texto de Cuerpo */
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
+    height: 100%;
 }
 
 /* Encabezado */
@@ -66,6 +67,7 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
 
 /* Sección de Compras */
 main {
+    flex: 1;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -73,7 +75,6 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     animation: fadeIn 1s ease-in-out;
-    flex: 1;
 }
 
 /* Productos */
@@ -118,10 +119,8 @@ footer { /* Pie de Página */
     color: #2c7bc3;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
-    position: fixed; /* Posiciona fijamente el objeto en la dirección marcada */
-    bottom: 0; 
+    margin-top: auto;
     width: 100%; /* Establece una medida de ancho en el objeto de acuerdo al porcentaje */
-    left: 0;
 }
 
 .social-media { /* Red Social */

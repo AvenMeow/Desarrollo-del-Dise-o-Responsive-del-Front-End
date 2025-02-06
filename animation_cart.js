@@ -23,7 +23,7 @@ function displayCart() {
         productElement.classList.add('cart-item');
         productElement.innerHTML = `
             <h3>${product.name}</h3>
-            <p>Precio Unitario: $${product.price.toFixed(2)}</p>
+            <p>Unidad: $${product.price.toFixed(2)}</p>
             <div>
                 <button onclick="changeQuantity(${index}, -1)">-</button>
                 <span>Cantidad: ${product.quantity}</span>

@@ -6,14 +6,25 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Cuerpo */
+/* HTML y Cuerpo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body { /* Texto de Cuerpo */
-    display: grid;
+    display: flex;
     flex-direction: column;
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
-    height: 100%;
+}
+
+/* Contenedor Principal */
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Encabezado */
@@ -24,7 +35,8 @@ header { /* Texto de Encabezado */
     animation: fadeIn 1s ease-in-out;
 }
 
-.header-layout { /* Panel de Encabezado */
+/* Panel de Encabezado */
+.header-layout { 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,35 +44,40 @@ header { /* Texto de Encabezado */
     border-bottom: 2px solid #ffc000;
 }
 
-#Logo img { /* Imagen de Encabezado */
+/* Imagen de Encabezado */
+#Logo img {
     height: 50px;
 }
 
-.header h1 { /* Título de Encabezado */
+/* Título de Encabezado */
+.header h1 { 
     font-size: 1.5rem;
     margin-left: 15px;
     animation: slideIn 0.5s ease-out;
 }
 
-nav ul { /* Barra de Menú */
+/* Barra de Menú */
+nav ul { 
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
 }
 
+/* Opciones de Menú */
 nav ul li {
     margin-top: 10px;
     margin-left: 20px;
 }
 
-nav ul li a { /* Opciones de Menú */
+/* Estilo: Cuando el usuario pasa el mouse sobre el enlace, se añade un subrayado al texto */
+nav ul li a {
     text-decoration: none;
     color: #5ea2ee;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, se añade un subrayado al texto */
+nav ul li a:hover {
     text-decoration: underline;
     transition: text-decoration 0.3s ease-in;
 }
@@ -78,20 +95,67 @@ main {
 }
 
 /* Productos */
-#cart-container { /* Carrito */
+#cart-container { /* Contenedor del Carrito */
     margin-bottom: 20px;
 }
 
-.cart-item { /* Panel de Artículo */
+.cart-item { /* Artículo del Carrito */
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #e0e0e0;
     padding: 10px 0;
+    margin: 10px 0;
+}
+
+.cart-item h3 { /* Título del Artículo */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item-details { /* Detalles del Artículo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.item-price, .item-total { /* Precio Unitario y Total del Artículo */
+    flex: 1;
+    text-align: center;
+}
+
+.quantity-controls { /* Controles de Cantidad */
     display: flex;
     align-items: center;
 }
 
-.cart-item h3 { /* Título de Artículo */
-    font-size: 1.2rem;
-    margin-left: 10px;
+.quantity-controls button { /* Botones de Control de Cantidad */
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.quantity-controls button:hover { /* Estilo de Botones al Pasar el Mouse */
+    background-color: #0056b3;
+}
+
+.remove-item { /* Botón de Eliminar Artículo */
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.remove-item:hover { /* Estilo de Botón de Eliminar al Pasar el Mouse */
+    background-color: #ff1a1a;
 }
 
 /* Pago */
@@ -119,15 +183,16 @@ footer { /* Pie de Página */
     color: #2c7bc3;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+    width: 100%;
     margin-top: auto;
-    width: 100%; /* Establece una medida de ancho en el objeto de acuerdo al porcentaje */
 }
 
-.social-media { /* Red Social */
+/* Red Social */
+.social-media {
     margin-top: 10px;
 }
 
-.social-media img { /* Imagen de Red Social */
+.social-media img {
     width: 30px;
     height: 30px;
     transition: opacity 0.3s;

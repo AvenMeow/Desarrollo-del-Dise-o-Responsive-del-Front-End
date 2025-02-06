@@ -118,6 +118,8 @@ footer { /* Pie de Página */
     color: #2c7bc3;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+    position: fixed;
+    bottom: 0;
     margin-top: auto;
 }
 

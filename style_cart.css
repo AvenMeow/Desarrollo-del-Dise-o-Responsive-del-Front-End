@@ -118,9 +118,10 @@ footer { /* Pie de Página */
     color: #2c7bc3;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Posiciona fijamente el objeto en la dirección marcada */
+    bottom: 0; 
+    width: 100%; /* Establece una medida de ancho en el objeto de acuerdo al porcentaje */
+    left: 0;
 }
 
 .social-media { /* Red Social */

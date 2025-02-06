@@ -120,6 +120,7 @@ footer { /* Pie de Página */
     animation: fadeIn 1.5s ease-in-out;
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 .social-media { /* Red Social */

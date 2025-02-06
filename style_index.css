@@ -125,12 +125,16 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
 }
 
 .features-item { /* Panel de Producto */
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
     animation: fadeIn 1s ease-in-out;
+    flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
+    justify-content: space-between; /* Distribuye el espacio para que el precio y botón estén abajo */
 }
 
 .features-item img { /* Imagen de Producto */
@@ -138,6 +142,9 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features-item h3 { /* Título de Producto */
@@ -153,7 +160,7 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
     font-size: 1.2rem;
     font-weight: bold;
     color: #28a745;
-    margin-bottom: 15px;
+    margin-top: auto; /* Empuja los elementos hacia abajo */
 }
 
 .add-to-cart { /* Botón de Productos */
@@ -164,6 +171,7 @@ nav ul li a:hover { /* Estilo: Cuando el usuario pasa el mouse sobre el enlace, 
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: auto;
 }
 
 .add-to-cart:hover {
